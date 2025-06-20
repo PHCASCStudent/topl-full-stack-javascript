@@ -1,0 +1,26 @@
+body {
+  background: #f3f4f6;
+}
+#project-list .active {
+  background: #1992d4;
+  color: #fff;
+}
+#todo-list .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.priority-low {
+  border-left: 5px solid #38bdf8;
+}
+.priority-medium {
+  border-left: 5px solid #fbbf24;
+}
+.priority-high {
+  border-left: 5px solid #ef4444;
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
