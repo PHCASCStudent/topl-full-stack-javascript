@@ -8,12 +8,28 @@
   </head>
   <body>
     <main>
-        <h1>Weather App</h1>
-        <form>
-            <label for='input-field'>Enter location: <input type='text' id='input-field'/></label>
-            <button id='submit-btn'>Get Weather</button>
-        </form>
-        <p id='result'></p>
+      <h1 id='title'>Weather App</h1>
+      <div id='weather-container'>
+      <form>
+        <label for="input-field"
+          >Enter location: <input type="text" id="input-field"
+        /></label>
+        <button id="submit-btn">Get Weather</button>
+      </form>
+      <div id='weather-card'>
+      <h2 class="labels" style="display: none">Weather:</h2>
+      <p id="res-weather"></p></div>
+
+      <div id='weather-card'>
+      <h2 class="labels" style="display: none">Temperature:</h2>
+      <p id="res-temp"></p></div>
+
+      <div id='weather-card'>
+      <h2 class="labels" style="display: none">Conditions:</h2>
+      <p id="res-conditions"></p></div>
+      
+      <p id="result"></p>
+    </div>
     </main>
     <script src="./script.js"></script>
   </body>
