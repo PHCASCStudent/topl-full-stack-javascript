@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #e0e7ef;
+      }
+      h1 {
+        text-align: center;
+      }
+      .boards {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
+      }
+      .board {
+        display: grid;
+        grid-template-columns: repeat(10, 30px);
+        grid-template-rows: repeat(10, 30px);
+        gap: 2px;
+        background: #bcd;
+        border: 2px solid #333;
+        padding: 8px;
+      }
+      .cell {
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        border: 1px solid #aaa;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
+      .cell.ship {
+        background: #7ec8e3;
+      }
+      .cell.hit {
+        background: #e57373;
+        color: #fff;
+      }
+      .cell.miss {
+        background: #bdbdbd;
+        color: #fff;
+      }
+      .label {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      #message {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.2em;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Battleship</h1>
+    <div id="message"></div>
+    <div class="boards">
+      <div>
+        <div class="label">Your Board</div>
+        <div id="player-board" class="board"></div>
+      </div>
+      <div>
+        <div class="label">Enemy Board</div>
+        <div id="computer-board" class="board"></div>
+      </div>
+    </div>
+    <button id="restart">Restart Game</button>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

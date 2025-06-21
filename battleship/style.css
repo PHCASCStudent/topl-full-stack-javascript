@@ -1,0 +1,22 @@
+body {
+  background: #e0e7ef;
+}
+.board {
+  user-select: none;
+}
+.cell {
+  transition: background 0.2s;
+}
+.cell:hover {
+  outline: 2px solid #1992d4;
+}
+button {
+  background: #1992d4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #1270a8;
+}
